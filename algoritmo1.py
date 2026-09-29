@@ -20,3 +20,6 @@ def algoritmo1(n):
                 counter += 1
                 k = k * 2
     return counter
+## función auxiliar para calcular la cantidad de operaciones que realiza el algoritmo 1
+def formula1(n):
+    return (n - n // 2 + 1) * (n - n // 2) * n.bit_length()

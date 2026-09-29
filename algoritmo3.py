@@ -11,10 +11,15 @@
 #}
 
 ##ahora en python este sería el equivalente
-def function3(n):
+def algoritmo3(n):
     if n <= 1:
-        return
+        return 0
+    counter = 0
     for i in range(1, n // 3 + 1):
         for j in range(1, n + 1, 4):  
-            print("Sequence")
+            counter += 1
             break
+    return counter
+## función auxiliar para calcular la cantidad de operaciones que realiza el algoritmo 3
+def formula3(n):
+    return 0 if n <= 1 else n // 3
